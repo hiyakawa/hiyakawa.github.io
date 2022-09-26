@@ -1,0 +1,35 @@
+body {
+    background-color: powderblue;
+}
+
+a {
+    color: hotpink;
+}
+
+a:hover {
+    color: #000000;
+}
+
+p {
+    color: black;
+}
+
+#bulletpoint1 {
+    color: gray;
+}
+
+#bulletpoint2 {
+    color: gray;
+}
+
+#bulletpoint3 {
+    color: gray;
+}
+
+#bulletpoint4 {
+    color: gray;
+}
+
+.github {
+    font-weight: italic;
+}
