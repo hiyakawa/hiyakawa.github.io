@@ -1,0 +1,59 @@
+---
+output:
+  pdf_document: default
+---
+
+## MUYUAN ZHANG
+
+Salt Lake City, UT | (385) 457 0970 | muyuanz@hotmail.com | [linkedin.com/in/muyuanz](https://www.linkedin.com/in/muyuanz/)
+
+Skills: C++ / Java / Python / R / SQL / JavaScript / HTML5 / CSS
+
+*Self-motivated. Fast learner. English, Japanese & Mandarin speaker.*
+
+### EXPERIENCE
+
+#### Internal Data Technician/Translation Associate
+May 2022 – Aug 2022
+
+Amazon RBS Japan Flex Team, Beijing, China, Full-time
+
+* Collaborated with vendor management to optimize data cleansing processes and to reduce manual processes within Amazon Fresh JP node as a bilinguist in English and Japanese;
+
+* Extracted data from websites by web crawling using Python, stored the data as data sets requiring no human interaction to upkeep;
+
+* Developed applications using Python ETL tools to clean and format data sets involving product and vendor information, and to generate HTML emails to check in with customers;
+
+* Achieved to save 8 hours of labor per week by implementing each Python application and contributed to accelerating the digital transformation of Flex team.
+
+#### Data Analyst
+Oct 2021 – May 2022
+
+Zhuoman Technology Co., Ltd, Tianjin, China, Full-time
+
+* Researched user trends of fonts for Android cell phones to implement online advertisement strategies, increasing marketing exposure by 57% and market share from 0.9% to 4.2%;
+
+* Assessed the effectiveness of the campaign by A/B test and linear regression analysis based on marketing data using MySQL, Impala and R;
+
+* Developed a Flask B/S application to upload and display Excel files on web pages using Python, Jinja2 and HTML;
+
+* Collaborated to design and maintain a Clickhouse database, created composite indexes and optimized queries to improve query performance by 400%.
+
+### EDUCATION
+
+#### University of Utah, Salt Lake City, UT
+Aug 2022 – Dec 2023
+
+Master of Science – Software Development 
+
+#### Washington University in St. Louis, St. Louis, MO
+Jan 2020 – May 2021
+
+Master of Engineering – Energy, Environmental & Chemical Engineering
+
+#### Tianjin University, Tianjin, China
+Sep 2015 – July 2019
+
+Bachelor of Engineering – Chemical Engineering
+
+Award: Honorable Mention in Mathematical Contest in Modeling (MCM/ICM), U.S.
