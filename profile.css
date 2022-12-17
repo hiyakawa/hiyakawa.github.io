@@ -31,7 +31,7 @@
     color: black;
 }
 
-#resume {
+#music {
     text-align: left;
     position: relative;
     left: 100px;
@@ -41,23 +41,23 @@
     color: black;
 }
 
-#date {
-    text-align: right;
+#awards {
+    text-align: left;
     position: relative;
-    right: 200px;
+    left: 100px;
     font-family: 'Computer Modern Serif';
     font-size: 15px;
     font-weight: normal;
     color: black;
 }
 
+img {
+    max-width: 100%;
+}
+
 .labelClass, p {
     font-family: 'Computer Modern Serif';
     color: black;
-}
-
-.emphasized {
-    font-style: italic;
 }
 
 .labelClass, a {
