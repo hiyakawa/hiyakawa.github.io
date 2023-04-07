@@ -1,0 +1,70 @@
+---
+title: "Individual Project Task 2 - Data Visualization"
+author: "Laura Zhang"
+date: "3/22/2021"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This project involves the dataset `Severe Weather Database Files (1950-2019)` from the U.S. National Oceanic and Atmospheric Administration (NOAA). The original data can be downloaded from https://www.spc.noaa.gov/wcm/#ATP.     
+
+Print the original dataset which records all the tornadoes occurred in the U.S. from 1950 to 2019:
+```{r}
+tornado_data <- read.csv(file = "D:/1950-2019_all_tornadoes.csv", header = T, sep=",")
+head(tornado_data)
+```
+    
+1. The original dataset is not a tidy data, for its column 2 to column 4, whose names are `year`, `month` and `day`, refer to the same as column 5 `date`.    
+    
+2. `Injuries`, `fatalities` and `loss` are dependent on `F-scale`(or `EF-scale`), which has been used to assign tornado ratings since 1971. The larger `F-scale` value is, the more injuries, fatalities and loss the tornado will cause.    
+
+According to the `SPC_severe_database_description`, the column name of `F-scale` has changed to `EF-scale` after January 2007, which values -9, 0, 1, 2, 3, 4, 5 (-9 = unknown). To analyze the `F-scale` (or `EF-scale`) data, rows whose `F-scale` are -9 must be removed.    
+    
+```{r}
+library(ggplot2)
+knownFscale<-subset(tornado_data, F_scale>=0)
+ggplot(knownFscale, aes(x=F_scale, y=injuries))+geom_point()
+ggplot(knownFscale, aes(x=F_scale, y=fatalities))+geom_point()
+```
+    
+From the plots above we can see a positive correlation between `F-scale` and `fatalities`, and things are roughly the same between `F-scale` and `injuries`. However, for cases whose `F-scale` is 4, reported injuries in three of them (1979-04-10, 2011-04-27, 1953-06-09) are more than all reported injuries in cases whose `F-scale` is 5.    
+
+3. To find any seasonal difference in the loss of each tornado, plot all the `loss` in each month.    
+    
+```{r}
+library(ggplot2)
+ggplot(tornado_data, aes(x=month, y=loss))+geom_point()
+```
+    
+It is worth noting that there are outliers, which imply that the corresponding tornadoes have caused significant property losses, especially the case on 2019-10-20 in Texas, which caused the most property loss in the record ($1,550,000,000) but no injuries or fatalities were reported.    
+
+According to Wikipedia:    
+> The tornado outbreak of October 20–22, 2019 was a significant severe weather event across the South Central United States. On the evening of October 20, discrete supercell thunderstorms developed across the Dallas–Fort Worth metroplex, contributing to several tornadoes. One of those tornadoes caused EF3 damage in the Dallas suburbs, becoming the costliest tornado event in Texas history, at $1.55 billion.   
+
+```{r}
+sc_201910<-subset(tornado_data, year==2019&month==10&day>=20&day<=22)
+sum(sc_201910$injuries)
+sum(sc_201910$fatalities)
+```
+By selecting all rows and create a subset of the cases occurred between 2019-10-20 to 2019-10-22, we can see that the tornado outbreak of October 20–22, 2019 only caused 4 injuries and 0 fatality, even if it was the costliest tornado event in Texas history.    
+
+4. As an example of visualization by histogram, plot the count of cases in different `F-scale`. `F-scale` is not suitable for boxplots, because the plot has no meanings.
+    
+```{r}
+library(ggplot2)
+ggplot(knownFscale, aes(x=F_scale))+geom_histogram()
+boxplot(knownFscale$F_scale)
+```
+     
+Instead, plot the `injuries` as a boxplot.    
+
+```{r}
+library(ggplot2)
+boxplot(tornado_data$injuries)
+```
+    
+This plot shows injuries caused by tornadoes in most cases.

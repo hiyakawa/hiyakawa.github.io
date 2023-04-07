@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    <style>
+        body {
+            font-family: "Computer Modern Sans", sans-serif;
+        }
+        </style>
+</body>
+</head>
+<body>
+    <div id="parent">
+        <div>
+        <h1 >Chat Room</h1>
+        </div>
+
+        <div id="btnCtnt" style="text-align:center;">
+            <img src="standby_monitor_moon.png">
+            <p></p>
+            <input type="button" id="lightBtn" class="button" value="Light On/Off"/>
+        </div>
+
+        <div id="userCtnt" style="text-align:center;">
+            <img src="address_book_users.png">
+            <p></p>
+            <span>
+                <label class="labelClass">User Name</label>
+                <textarea id="user"></textarea>
+            </span>
+        </div>
+
+        <div id="roomCtnt" style="text-align:center;">
+            <img src="mailbox_world.png">
+            <p></p>
+            <span>
+                <label class="labelClass">Room Name</label>
+                <textarea id="room"></textarea>
+            </span>
+        </div>
+
+        <div id="msgCtnt" style="text-align:center;">
+            <img src="laptop_infrared.png">
+            <p></p>
+            <span>
+                <label class="labelClass">Message</label>
+                <textarea id="msg"></textarea>
+            </span>
+        </div>
+
+        <div id="chatBoard"></div>
+    </div>
+    <script type="text/javascript" src="chat.js"></script>
+</body>
+</html>

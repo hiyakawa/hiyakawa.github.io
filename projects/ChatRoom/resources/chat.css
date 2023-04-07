@@ -1,0 +1,100 @@
+h1 {
+    text-align: right;
+    position: relative;
+    right: 100px;
+    font-family: 'Computer Modern Serif';
+    font-size: 70px;
+    font-weight: normal;
+    color: black;
+}
+
+#btnCtnt {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    display:inline-block;
+}
+
+input[type=button] {
+    font-family: 'Computer Modern Serif';
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+}
+
+#userCtnt {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    display:inline-block;
+}
+
+#user {
+    width: 194px;
+    height: 30px;
+    resize: none;
+}
+
+#roomCtnt {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    display:inline-block;
+}
+
+#room {
+    width: 194px;
+    height: 30px;
+    resize: none;
+}
+
+#msgCtnt {
+    width: 450px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    display:inline-block;
+}
+
+#msg {
+    width: 440px;
+    height: 30px;
+    resize: none;
+}
+
+#chatBoard {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    font-family: 'Computer Modern Serif';
+}
+
+#parent {
+    margin: auto;
+    width: 80%;
+    min-height: 600px;
+    border: 4px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+.labelClass, p {
+    font-family: 'Computer Modern Serif';
+    color: black;
+}
