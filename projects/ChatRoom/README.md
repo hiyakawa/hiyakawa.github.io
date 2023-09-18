@@ -11,8 +11,8 @@
 
 ### Light On
 
-![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/ChatRoom/lighton.png)
+![image](lighton.png)
 
 ### Light Off
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/ChatRoom/lightoff.png))
+![image](lightoff.png)

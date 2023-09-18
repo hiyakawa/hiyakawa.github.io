@@ -16,4 +16,4 @@ and even mix the sine waves to create terrible (but fun) noizes!
 
 ## Screenshot
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/Synthesizer/screenshot.png))
+![image](screenshot.png)

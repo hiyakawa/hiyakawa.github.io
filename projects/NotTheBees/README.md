@@ -19,12 +19,12 @@ get rid of the bees. Have fun!
 
 #### index.html
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/index.png))
+![image](index.png)
 
 #### game.html
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/game.png))
+![image](game.png)
 
 #### gameover.html
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/gameover.png))
+![image](gameover.png)

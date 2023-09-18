@@ -10,4 +10,4 @@
 
 ## Screenshot
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/LMS/lms.png))
+![image](lms.png)

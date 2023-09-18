@@ -13,6 +13,6 @@ Click any state on the map to check the temperature & precipitation in June thro
 
 ## Screenshot
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/TempChart/tempchart.png))
+![image](tempchart.png)
 
-![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/TempChart/tempchart_utah.png))
+![image](tempchart_utah.png)
