@@ -12,21 +12,19 @@ get rid of the bees. Have fun!
 ## Features
 
 * Click and redirect to welcome/game page
-
-* Vivid random movement of bees (which can be a little bit creepy)
-
-* Cute as a vintage!
+* Vivid random movement of bees (can be a bit creepy)
+* Cute as vintage!
 
 ## Screenshot
 
 #### index.html
 
-![image](https://github.com/hiyakawa/msd_coursework_u_of_u/blob/main/CS6011/Week3/Day13/NotTheBees/index.png)
+![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/index.png))
 
 #### game.html
 
-![image](https://github.com/hiyakawa/msd_coursework_u_of_u/blob/main/CS6011/Week3/Day13/NotTheBees/game.png)
+![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/game.png))
 
 #### gameover.html
 
-![image](https://github.com/hiyakawa/msd_coursework_u_of_u/blob/main/CS6011/Week3/Day13/NotTheBees/gameover.png)
+![image](![image](https://github.com/hiyakawa/hiyakawa.github.io/tree/main/projects/NotTheBees/gameover.png))

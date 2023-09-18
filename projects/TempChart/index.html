@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CS 6017 - U.S. Temperature and Precipitation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    #instruction {
+      position: relative;
+      left: 20px;
+    }
+
+    .center {
+      position: absolute;
+      padding: 10px;
+      top: 50%;
+      left: 50%;
+    }
+
+    .division {
+      width: 50%;
+      height: 100%;
+      overflow: auto;
+      box-sizing: border-box;
+    }
+
+    .selected {
+      background: powderblue;
+    }
+
+    svg {
+      display: block;
+      width: 95%;
+    }
+
+    #map {
+      height: 500px;
+    }
+
+    #bar {
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="temperature.js"></script>
+
+  <div class="center" id="instruction">
+    <br>
+    <p>
+      Click any state on the map to check the temperature & precipitation in June through 1895 - 2023!
+    </p>
+    <br>
+  </div>
+
+  <div id="main">
+    <div class="division" id="mapDiv">
+      <svg id="map">
+      </svg>
+    </div>
+
+    <div class="division" id="barDiv">
+      <svg id="bar">
+      </svg>
+    </div>
+  </div>
+
+  <div class="center" id="instruction">
+    <p>
+      Data Source: <a href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series">NOAA</a>
+    </p>
+  </div>
+</body>
+</html>
