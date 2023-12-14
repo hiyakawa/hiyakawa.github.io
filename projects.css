@@ -31,15 +31,16 @@
     color: black;
 }
 
-#projects {
-    text-align: left;
-    position: relative;
-    left: 20px;
-    font-family: 'Computer Modern Serif';
-    font-size: 15px;
-    font-weight: normal;
-    color: black;
-    display: inline-block;
+.column {
+    float: left;
+    width: 27%;
+    padding: 2%;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .labelClass, p {
